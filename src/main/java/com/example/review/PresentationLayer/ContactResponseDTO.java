@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class ContactResponseDTO {
-    private int contactId;
+    private String contactId;
     private String firstname;
     private String lastName;
     private int phoneNumber;

@@ -11,10 +11,20 @@ import lombok.NoArgsConstructor;
 public class Contact {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private int contactId;
-    private String firstname;
+    private int  id; // private id
+
+    @Column(name = "contactid")
+    private String contactId;
+
+    @Column(name = "firstname")
+    private String firstName;
+
+    @Column(name = "lastname")
     private String lastName;
+
+    @Column(name = "phonenumber")
     private int phoneNumber;
+
+    @Column(name = "address")
     private String address;
 }
